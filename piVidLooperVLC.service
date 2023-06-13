@@ -1,0 +1,12 @@
+[Unit]
+Description=Pi Video Looper VLC
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/piVidLooper/piVidLooperVLC.sh
+User=administrator
+Group=administrator
+
+[Install]
+WantedBy=multi-user.target
